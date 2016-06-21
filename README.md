@@ -66,5 +66,5 @@ Big thanks to people that have contributed to its development in git and initial
 
 Copyright (c) 2016 Jānis Gruzis and other contributors
 
-Licensed under the MIT License
+Licensed under the GPLv3 License
 

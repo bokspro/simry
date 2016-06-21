@@ -22,7 +22,7 @@
     "uglifyjs": "^2.4.10"
   },
   "author": "Jānis Gruzis <jgruzis@gmail.com>",
-  "license": "MIT",
+  "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/KJPS/simry/issues"
   },
