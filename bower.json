@@ -1,0 +1,24 @@
+{
+  "name": "simry",
+  "description": "Pixi.JS simplified library for educational purposes.",
+  "main": "simry.js",
+  "authors": [
+    "Jānis Gruzis <jgruzis@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "pixi.js",
+    "simry",
+    "javascript",
+    "webgl",
+    "canvas"
+  ],
+  "homepage": "https://github.com/KJPS/simry",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

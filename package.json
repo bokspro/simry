@@ -1,0 +1,30 @@
+{
+  "name": "simry",
+  "version": "1.0.0",
+  "description": "Pixi.JS simplified library for educational purposes.",
+  "main": "simry.js",
+  "scripts": {
+    "build": "./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KJPS/simry.git"
+  },
+  "keywords": [
+    "pixi.js",
+    "simry",
+    "javascript",
+    "webgl",
+    "canvas"
+  ],
+  "dependencies": {
+    "jsdoc-to-markdown": "^1.3",
+    "uglifyjs": "^2.4.10"
+  },
+  "author": "Jānis Gruzis <jgruzis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KJPS/simry/issues"
+  },
+  "homepage": "https://github.com/KJPS/simry#readme"
+}
