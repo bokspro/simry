@@ -13,8 +13,23 @@
 <dt><a href="#KEY_LEFT">KEY_LEFT</a> : <code>Number</code></dt>
 <dd><p>&quot;A&quot; taustiņš</p>
 </dd>
+<dt><a href="#KEY_ARROW_DOWN">KEY_ARROW_DOWN</a> : <code>Number</code></dt>
+<dd><p>Taustiņš uz leju</p>
+</dd>
+<dt><a href="#KEY_ARROW_DOWN">KEY_ARROW_DOWN</a> : <code>Number</code></dt>
+<dd><p>Taustiņš uz augšu</p>
+</dd>
+<dt><a href="#KEY_ARROW_DOWN">KEY_ARROW_DOWN</a> : <code>Number</code></dt>
+<dd><p>Taustiņš pa labi</p>
+</dd>
+<dt><a href="#KEY_ARROW_DOWN">KEY_ARROW_DOWN</a> : <code>Number</code></dt>
+<dd><p>Taustiņš pa kreisi</p>
+</dd>
 <dt><a href="#KEY_SPACEBAR">KEY_SPACEBAR</a> : <code>Number</code></dt>
 <dd><p>&quot;Spacebar&quot; taustiņš</p>
+</dd>
+<dt><a href="#KEY_ENTER">KEY_ENTER</a> : <code>Number</code></dt>
+<dd><p>&quot;Enter&quot; taustiņš</p>
 </dd>
 <dt><a href="#COLOR_RED">COLOR_RED</a> : <code>Number</code></dt>
 <dd><p>Sarkana krāsa</p>
@@ -108,10 +123,10 @@
 <dt><a href="#pause">pause()</a></dt>
 <dd><p>Apstādināt spēles darbību.</p>
 </dd>
-<dt><a href="#onKeyDown">onKeyDown(key, fn)</a></dt>
+<dt><a href="#onKeyDown">onKeyDown(fn)</a></dt>
 <dd><p>Pogas nospiešana uz leju.</p>
 </dd>
-<dt><a href="#onKeyUp">onKeyUp(key, fn)</a></dt>
+<dt><a href="#onKeyUp">onKeyUp(fn)</a></dt>
 <dd><p>Pogas atlaišana.</p>
 </dd>
 </dl>
@@ -140,10 +155,40 @@
 "A" taustiņš
 
 **Kind**: global variable  
+<a name="KEY_ARROW_DOWN"></a>
+
+## KEY_ARROW_DOWN : <code>Number</code>
+Taustiņš uz leju
+
+**Kind**: global variable  
+<a name="KEY_ARROW_DOWN"></a>
+
+## KEY_ARROW_DOWN : <code>Number</code>
+Taustiņš uz augšu
+
+**Kind**: global variable  
+<a name="KEY_ARROW_DOWN"></a>
+
+## KEY_ARROW_DOWN : <code>Number</code>
+Taustiņš pa labi
+
+**Kind**: global variable  
+<a name="KEY_ARROW_DOWN"></a>
+
+## KEY_ARROW_DOWN : <code>Number</code>
+Taustiņš pa kreisi
+
+**Kind**: global variable  
 <a name="KEY_SPACEBAR"></a>
 
 ## KEY_SPACEBAR : <code>Number</code>
 "Spacebar" taustiņš
+
+**Kind**: global variable  
+<a name="KEY_ENTER"></a>
+
+## KEY_ENTER : <code>Number</code>
+"Enter" taustiņš
 
 **Kind**: global variable  
 <a name="COLOR_RED"></a>
@@ -436,25 +481,23 @@ Apstādināt spēles darbību.
 **Kind**: global function  
 <a name="onKeyDown"></a>
 
-## onKeyDown(key, fn)
+## onKeyDown(fn)
 Pogas nospiešana uz leju.
 
 **Kind**: global function  
 
 | Param | Type |
 | --- | --- |
-| key | <code>Numeric</code> | 
 | fn | <code>function</code> | 
 
 <a name="onKeyUp"></a>
 
-## onKeyUp(key, fn)
+## onKeyUp(fn)
 Pogas atlaišana.
 
 **Kind**: global function  
 
 | Param | Type |
 | --- | --- |
-| key | <code>Numeric</code> | 
 | fn | <code>function</code> | 
 

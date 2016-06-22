@@ -13,8 +13,18 @@ var KEY_UP = 87;
 var KEY_RIGHT = 68;
 /** @var {Number} KEY_LEFT "A" taustiņš */
 var KEY_LEFT = 65;
+/** @var {Number} KEY_ARROW_DOWN Taustiņš uz leju */
+var KEY_ARROW_DOWN = 40;
+/** @var {Number} KEY_ARROW_DOWN Taustiņš uz augšu */
+var KEY_ARROW_UP = 38;
+/** @var {Number} KEY_ARROW_DOWN Taustiņš pa labi */
+var KEY_ARROW_RIGHT = 39;
+/** @var {Number} KEY_ARROW_DOWN Taustiņš pa kreisi */
+var KEY_ARROW_LEFT = 37;
 /** @var {Number} KEY_SPACEBAR "Spacebar" taustiņš */
 var KEY_SPACEBAR = 32
+/** @var {Number} KEY_ENTER "Enter" taustiņš */
+var KEY_ENTER = 13;
 
 /** @var {Number} COLOR_RED Sarkana krāsa */
 var COLOR_RED = 0xFF0000;
@@ -383,34 +393,32 @@ function pause()
 /**
  * Pogas nospiešana uz leju.
  *
- * @param {Numeric} key
  * @param {Function} fn
  */
-function onKeyDown(key, fn)
+function onKeyDown(fn)
 {
     if (!events['onkeydown']) {
         events['onkeydown'] = [];
     }
 
     events['onkeydown'].push(function(e){
-        e.which == key && fn();
+        fn(e.which);
     });
 }
 
 /**
  * Pogas atlaišana.
  *
- * @param {Numeric} key
  * @param {Function} fn
  */
-function onKeyUp(key, fn)
+function onKeyUp(fn)
 {
     if (!events['onkeyup']) {
         events['onkeyup'] = [];
     }
 
     events['onkeyup'].push(function(e){
-        e.which == key && fn();
+        fn(e.which);
     });
 }
 
@@ -419,7 +427,7 @@ document.onkeydown = function(e){
         return;
     }
 
-    for (var i in events['onkeydown']) {
+    for (var i = 0; i < events['onkeydown'].length; ++i) {
         events['onkeydown'][i](e);
     }
 };
@@ -429,7 +437,7 @@ document.onkeyup = function(e){
         return;
     }
 
-    for (var i in events['onkeyup']) {
+    for (var i = 0; i < events['onkeyup'].length; ++i) {
         events['onkeyup'][i](e);
     }
 };
