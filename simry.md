@@ -78,6 +78,15 @@
 <dt><a href="#animate">animate(tick)</a></dt>
 <dd><p>Iestatīt animācijas funkciju, kuru izsauc ar ļoti mazu laika starpību.</p>
 </dd>
+<dt><a href="#background">background(color)</a></dt>
+<dd><p>Nokrāsot fonu.</p>
+</dd>
+<dt><a href="#point">point(x, y, color)</a> ⇒</dt>
+<dd><p>Iekrāsot pikseli.</p>
+</dd>
+<dt><a href="#line">line(x1, y1, x2, y2, width, color)</a> ⇒</dt>
+<dd><p>Vilkt līniju.</p>
+</dd>
 <dt><a href="#text">text(x, y, text, style)</a> ⇒</dt>
 <dd><p>Zīmēt tekstu.</p>
 </dd>
@@ -287,6 +296,48 @@ Iestatīt animācijas funkciju, kuru izsauc ar ļoti mazu laika starpību.
 | --- | --- |
 | tick | <code>function</code> | 
 
+<a name="background"></a>
+
+## background(color)
+Nokrāsot fonu.
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| color | <code>Number</code> | 
+
+<a name="point"></a>
+
+## point(x, y, color) ⇒
+Iekrāsot pikseli.
+
+**Kind**: global function  
+**Returns**: PIXI.Graphics  
+
+| Param | Type |
+| --- | --- |
+| x | <code>Number</code> | 
+| y | <code>Number</code> | 
+| color | <code>Number</code> | 
+
+<a name="line"></a>
+
+## line(x1, y1, x2, y2, width, color) ⇒
+Vilkt līniju.
+
+**Kind**: global function  
+**Returns**: PIXI.Graphics  
+
+| Param | Type |
+| --- | --- |
+| x1 | <code>Number</code> | 
+| y1 | <code>Number</code> | 
+| x2 | <code>Number</code> | 
+| y2 | <code>Number</code> | 
+| width | <code>Number</code> | 
+| color | <code>Number</code> | 
+
 <a name="text"></a>
 
 ## text(x, y, text, style) ⇒
@@ -316,7 +367,7 @@ Zīmēt četrstūri.
 | y | <code>Number</code> | 
 | width | <code>Number</code> | 
 | height | <code>Number</code> | 
-| color |  | 
+| color | <code>Number</code> | 
 
 <a name="triangle"></a>
 
@@ -334,7 +385,7 @@ Zīmēt trijstūri.
 | y2 | <code>Number</code> | 
 | x3 | <code>Number</code> | 
 | y3 | <code>Number</code> | 
-| color |  | 
+| color | <code>Number</code> | 
 
 <a name="polygon"></a>
 
@@ -347,7 +398,7 @@ Zīmēt daudzstūri.
 | Param | Type |
 | --- | --- |
 | points | <code>Array</code> | 
-| color |  | 
+| color | <code>Number</code> | 
 
 <a name="circle"></a>
 
@@ -362,7 +413,7 @@ Zīmēt riņķi.
 | x | <code>Number</code> | 
 | y | <code>Number</code> | 
 | radius | <code>Number</code> | 
-| color |  | 
+| color | <code>Number</code> | 
 
 <a name="elipse"></a>
 
@@ -378,7 +429,7 @@ Zīmēt elipsi.
 | y | <code>Number</code> | 
 | width | <code>Number</code> | 
 | height | <code>Number</code> | 
-| color |  | 
+| color | <code>Number</code> | 
 
 <a name="image"></a>
 

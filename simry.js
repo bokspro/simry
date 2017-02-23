@@ -91,6 +91,59 @@ function animate(tick) {
 }
 
 /**
+ * Nokrāsot fonu.
+ *
+ * @param {Number} color
+ */
+function background(color)
+{
+    renderer.background = color;
+}
+
+/**
+ * Iekrāsot pikseli.
+ *
+ * @param {Number} x
+ * @param {Number} y
+ * @param {Number} color
+ *
+ * @return PIXI.Graphics
+ */
+function point(x, y, color)
+{
+    var point = new PIXI.Graphics();
+    point.lineStyle(1, color);
+    point.moveTo(x, y);
+    point.lineTo(x + 1, y + 1);
+    stage.addChild(point);
+
+    return point;
+}
+
+/**
+ * Vilkt līniju.
+ *
+ * @param {Number} x1
+ * @param {Number} y1
+ * @param {Number} x2
+ * @param {Number} y2
+ * @param {Number} width
+ * @param {Number} color
+ *
+ * @return PIXI.Graphics
+ */
+function line(x1, y1, x2, y2, width, color)
+{
+    var line = new PIXI.Graphics();
+    line.lineStyle(width, color);
+    line.moveTo(x1, y1);
+    line.lineTo(x2, y2);
+    stage.addChild(line);
+
+    return line;
+}
+
+/**
  * Zīmēt tekstu.
  *
  * @param {Number} x
@@ -115,7 +168,7 @@ function text(x, y, text, style) {
  * @param {Number} y
  * @param {Number} width
  * @param {Number} height
- * @param color
+ * @param {Number} color
  *
  * @return PIXI.Graphics
  */
@@ -142,7 +195,7 @@ function rectangle(x, y, width, height, color) {
  * @param {Number} y2
  * @param {Number} x3
  * @param {Number} y3
- * @param color
+ * @param {Number} color
  *
  * @return PIXI.Graphics
  */
@@ -158,7 +211,7 @@ function triangle(x1, y1, x2, y2, x3, y3, color) {
  * Zīmēt daudzstūri.
  *
  * @param {Array} points
- * @param color
+ * @param {Number} color
  *
  * @return PIXI.Graphics
  */
@@ -194,7 +247,7 @@ function polygon(points, color) {
  * @param {Number} x
  * @param {Number} y
  * @param {Number} radius
- * @param color
+ * @param {Number} color
  *
  * @return PIXI.Graphics
  */
@@ -219,7 +272,7 @@ function circle(x, y, radius, color) {
  * @param {Number} y
  * @param {Number} width
  * @param {Number} height
- * @param color
+ * @param {Number} color
  *
  * @return PIXI.Graphics
  */
