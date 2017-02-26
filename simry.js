@@ -97,7 +97,7 @@ function animate(tick) {
  */
 function background(color)
 {
-    renderer.background = color;
+    renderer.backgroundColor = color;
 }
 
 /**
