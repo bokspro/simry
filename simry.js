@@ -61,8 +61,9 @@ var COLOR_TEAL = 0x008080;
 function init(width, height, options) {
     width = width ? width : 800;
     height = height ? height : 600;
-
-    renderer = new PIXI.WebGLRenderer(width, height, options);
+    renderer = new PIXI.Renderer(width, height, options);
+    renderer.view.height=height;
+    renderer.view.width=width;
     document.body.appendChild(renderer.view);
     stage = new PIXI.Container();
 }
@@ -302,12 +303,11 @@ var textureCache = {};
  * @return PIXI.Sprite
  */
 function image(x, y, url) {
-    var texture = textureCache[url] ? textureCache[url] : PIXI.Texture.fromImage(url);
+    var texture = textureCache[url] ? textureCache[url] : PIXI.Texture.from(url);
     textureCache[url] = texture;
     var sprite = new PIXI.Sprite(texture);
     sprite.position.set(x, y);
     stage.addChild(sprite);
-
     return sprite;
 }
 
